@@ -10,13 +10,13 @@
     }
 
     .container {
-      max-width: 600px;
+      max-width: auto;
       margin: 0 auto;
       padding: 20px;
     }
 
     h1 {
-      text-align: center;
+      font-size: 70px;
     }
 
     form {
@@ -28,12 +28,14 @@
       padding: 20px;
       border: 1px solid #ccc;
       background-color: #000;
+      font-size: 30px;
     }
 
     .question p {
       font-weight: bold;
       margin-top: 0;
       color: white;
+      font-size: 30px;
     }
 
     .option {
@@ -50,12 +52,16 @@
       display: block;
       margin: 0 auto;
       padding: 10px 20px;
-      font-size: 70px;
+      font-size: 30px;
       background-color: #4CAF50;
       color: #fff;
       border: none;
       border-radius: 4px;
       cursor: pointer;
+    }
+
+    input[type="radio"] {
+      transform: scale(1.5);
     }
 
     button {
@@ -102,23 +108,11 @@
       margin-bottom: 5px;
       color: white;
     }
-
-    p {
-      font-size: 70px;
-    }
-
-    label {
-      font-size: 70px;
-    }
-
-    h1 {
-      font-size: 70px;
-    }
   </style>
 </head>
 <body>
   <div class="container">
-    <p>PERKALIAN 1</p>
+    <center><h1>PERKALIAN 1</h1></center>
 
     <form id="quizForm">
       <div class="question">
@@ -324,13 +318,11 @@
       <input type="submit" value="Submit">
     </form>
 
-    <a href="index.html"><button>BACK</button></a>
-
     <div id="result"></div>
 
     <div id="history">
-        <h2>History</h2>
-        <h6>HISTORY AKAN TERHAPUS JIKA MENINGGALKAN PERTANYAAN INI</h6>
+        <h1>History</h1>
+        <h2>HISTORY AKAN TERHAPUS JIKA MENINGGALKAN PERTANYAAN INI</h2>
         <ul id="historyList"></ul>
       </div>
     </div>
